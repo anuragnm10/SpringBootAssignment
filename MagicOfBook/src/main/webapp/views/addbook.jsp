@@ -31,9 +31,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="home">Home</a></li>
-					<li class="nav-item"><a class="nav-link active" href="login">Login</a></li>
+					<li class="nav-item"><a class="nav-link active" href="admindash">Back</a></li>
 
 				</ul>
 			</div>
@@ -47,8 +45,7 @@
 					<div class="col-lg-8 col-xl-6">
 						<div class="card rounded-3">
 							<div class="card-body p-4 p-md-5">
-								<h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration
-									Info</h3>
+								<h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">ADD Book</h3>
 
 								<form class="px-md-2">
 
