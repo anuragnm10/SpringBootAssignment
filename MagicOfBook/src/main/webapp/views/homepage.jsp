@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +16,20 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<Style>
+background-image
+:
+ 
+url
+(
+"
+imagess
+/
+book
+.jpg
+"
+)
+</Style>
 <body style="height: 92vh; overflow: hidden;">
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,20 +47,15 @@
 						aria-current="page" href="index.jsp">Home</a></li>
 					<li class="nav-item"><a class="nav-link active" href="login">Login</a>
 					</li>
-					<li class="nav-item"><a class="nav-link active" href="adminregister">AdminRegister</a>
-					</li>
-					<li class="nav-item"><a class="nav-link active" href="userregister">UserRegister</a>
-					</li>
-					<li style="margin-left: 120vh;" class="nav-item"><a
-						class="nav-link active" style="font-weight: bolder" href="homepage"><i class="fa fa-book"></i>&nbsp; Books</a>
-					</li>
+					<li class="nav-item"><a class="nav-link active"
+						href="adminregister">AdminRegister</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						href="userregister">UserRegister</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div style="text-align: center;">
-		<img src="resources/images/book.jpeg" style="max-width: 100%;">
-	</div>
+	
 
 
 

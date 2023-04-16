@@ -6,6 +6,6 @@ import com.gl.MagicOfBook.entity.Book;
 
 public interface BookRepo extends CrudRepository<Book, Integer>{
 	
-	
+	Book findById(int id);
 
 }

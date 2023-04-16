@@ -24,4 +24,22 @@ public class BookService {
 		bookRepo.findAll().forEach(books::add);
 		return books;
 	}
+	
+	public Book getBook(int bookid) {
+		Book book = bookRepo.findById(bookid);
+		return book;
+	}
+	
+	public boolean deleteById(int id) {
+		if(bookRepo.existsById(id)) {
+			bookRepo.deleteById(id);
+			return true;
+		}else {
+			return false;
+		}	
+	}
+	
+	public void updateBook(Book book) {
+		bookRepo.save(book);
+	}
 }
