@@ -17,7 +17,14 @@
 	crossorigin="anonymous"></script>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.message {
+  float: right;
+  text-align: right;
+}
+</style>
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -32,16 +39,16 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="userdash/logout">logout</a></li>
-					<li class="nav-item"><a class="nav-link active" href="like">Liked Books</a>
-					</li>
-					<li class="nav-item"><a class="nav-link active" href="rdltr">Read Later Books</a>
-					</li>
-					<li style="margin-left: 120vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
-					</li>
+						<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="userdash">Dashboard</a></li>
+					<li style="margin-left: 140vh;" class="nav-item"><a
+						class="nav-link active">${sessionScope.user.name }</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	
+	<h1 style="text-align:center; color:#704a77;">Read Later Books</h1>
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -51,29 +58,24 @@
 					<th scope="col">Author</th>
 					<th scope="col">Publication</th>
 					<th scope="col">Price</th>
-					<th scope="col">READ LATER/ LIKE</th>
+					<th scope="col">Remove</th>
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${books }" var="book">
+				<c:forEach items="${userbook }" var="book">
 					<tr>
-						<td>${book.bookname }</td>
-						<td>${book.genre }</td>
-						<td>${book.author }</td>
-						<td>${book.publication }</td>
-						<td>${book.price }</td>
-						<td><a style="margin: 7.5%"
-							href="userdash/readlater/${book.id }"><i
-								class="fa fa-bookmark-o" style="color: black"></i></a> &nbsp; <a
-							href="userdash/liked/${book.id }"> <i
-								class="fa fa-heart-o" style="color: black"></i>
-						</a></td>
+						<td>${book.book.bookname }</td>
+						<td>${book.book.genre }</td>
+						<td>${book.book.author }</td>
+						<td>${book.book.publication }</td>
+						<td>${book.book.price }</td>
+						<td><a style="margin: 7.5%" href="removereadlater/${book.id }"><i
+								class="fa fa-trash" style="color: black"></i></a></td>
 					</tr>
 				</c:forEach>
 
 			</tbody>
 		</table>
 	</div>
-
 </body>
 </html>
