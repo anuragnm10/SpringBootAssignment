@@ -36,7 +36,11 @@
 					</li>
 					<li class="nav-item"><a class="nav-link active" href="rdltr">Read Later Books</a>
 					</li>
-					<li style="margin-left: 120vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
+					<li style="margin-left:10vh">
+						<input style="margin-top: 5px; border-radius:9px" placeholder="Search" type="text"/>
+						<a class="fa fa-search" style="color: black; margin-left:-25px; text-decoration:none"></a>
+					</li>
+					<li style="margin-left: 80vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
 					</li>
 				</ul>
 			</div>
