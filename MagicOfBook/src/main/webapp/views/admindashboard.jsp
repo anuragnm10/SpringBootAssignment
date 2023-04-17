@@ -31,7 +31,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="admindash/logout">logout</a></li>
+						aria-current="page" href="admindash/logout">Logout</a></li>
 					<li class="nav-item"><a class="nav-link active" href="insertbook">Add
 							Book </a></li>
 

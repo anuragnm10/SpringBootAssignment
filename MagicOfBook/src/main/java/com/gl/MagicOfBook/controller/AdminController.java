@@ -21,7 +21,7 @@ public class AdminController {
 	private BookService bookservice;
 	
 	@GetMapping()
-	public String homepageBooks(Map<String, List<Book>> map) {
+	public String adminpageBooks(Map<String, List<Book>> map) {
 		List<Book> books = bookservice.getAllBooks();
 		map.put("books", books);
 		return "admindashboard";
