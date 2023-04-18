@@ -20,7 +20,7 @@ import com.gl.MagicOfBook.service.BookService;
 import com.gl.MagicOfBook.service.UserBookService;
 
 @Controller
-@RequestMapping("/userdash")
+//@RequestMapping("/userdash")
 public class UserController {
 	
 	@Autowired
@@ -29,21 +29,21 @@ public class UserController {
 	@Autowired
 	private UserBookService userbookservice;
 
-	@GetMapping
+	@GetMapping("/userdash")
 	public String userpageBooks(Map<String, List<Book>> map, HttpSession session) {
 		List<Book> books = bookservice.getAllBooks();
 		map.put("books", books);
 		return "userdashboard";
 	}
 	
-	@GetMapping("/logout")
+	@GetMapping("userdash/logout")
 	public String logout(HttpSession session) {
 		session.removeAttribute("admin");
 		session.invalidate();
 		return "redirect:/login";
 	}
 	
-	@GetMapping("/readlater/{bookid}")
+	@GetMapping("userdash/readlater/{bookid}")
 	public String addToReadlater(@PathVariable int bookid, HttpSession session) {
 		User user = (User) session.getAttribute("user");
 		System.out.println(user);
@@ -62,7 +62,7 @@ public class UserController {
 	}
 	
 	
-	@GetMapping("/liked/{bookid}")
+	@GetMapping("userdash/liked/{bookid}")
 	public String addTolikedbook(@PathVariable int bookid, HttpSession session) {
 		User user = (User) session.getAttribute("user");
 		System.out.println(user);

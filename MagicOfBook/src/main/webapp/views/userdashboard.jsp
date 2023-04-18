@@ -44,7 +44,7 @@
 		</div>
 	</nav>
 	<div>
-		<form method="get" action="userdash/search">
+		<form method="get" action="/search">
 			<input style="margin-left: 5px; margin-top: 5px; border-radius: 9px" type="text"
 				name="query" placeholder="Search..."> <a
 				class="fa fa-search"
