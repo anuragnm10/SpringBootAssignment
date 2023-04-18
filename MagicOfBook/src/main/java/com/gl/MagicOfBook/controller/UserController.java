@@ -20,7 +20,6 @@ import com.gl.MagicOfBook.service.BookService;
 import com.gl.MagicOfBook.service.UserBookService;
 
 @Controller
-//@RequestMapping("/userdash")
 public class UserController {
 	
 	@Autowired
