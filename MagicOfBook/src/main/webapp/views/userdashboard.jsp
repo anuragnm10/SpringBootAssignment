@@ -32,20 +32,33 @@
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="userdash/logout">logout</a></li>
-					<li class="nav-item"><a class="nav-link active" href="like">Liked Books</a>
-					</li>
-					<li class="nav-item"><a class="nav-link active" href="rdltr">Read Later Books</a>
-					</li>
-					<li style="margin-left:10vh">
-						<input style="margin-top: 5px; border-radius:9px" placeholder="Search" type="text"/>
-						<a class="fa fa-search" style="color: black; margin-left:-25px; text-decoration:none"></a>
-					</li>
-					<li style="margin-left: 80vh;" class="nav-item"><a class="nav-link active" >Welcome ${sessionScope.user.name }</a>
-					</li>
+					<li class="nav-item"><a class="nav-link active" href="like">Liked
+							Books</a></li>
+					<li class="nav-item"><a class="nav-link active" href="rdltr">Read
+							Later Books</a></li>
+
+					<li style="margin-left: 120vh;" class="nav-item"><a
+						class="nav-link active">Welcome ${sessionScope.user.name }</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+	<div>
+		<form method="get" action="userdash/search">
+			<input style="margin-left: 5px; margin-top: 5px; border-radius: 9px" type="text"
+				name="query" placeholder="Search..."> <a
+				class="fa fa-search"
+				style="color: black; margin-left: -25px; text-decoration: none"></a>&nbsp;<select style="margin-left: 5px"
+				name="category">
+				<option value="author">Author</option>
+				<option value="booktitle">Book Title</option>
+				<option value="publication">Publication</option>
+				<option value="id">Id</option>
+				<option value="price">Price range Upto</option>
+			</select>
+			<button type="submit">Search</button>
+		</form>
+	</div>
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -69,8 +82,8 @@
 						<td><a style="margin: 7.5%"
 							href="userdash/readlater/${book.id }"><i
 								class="fa fa-bookmark-o" style="color: black"></i></a> &nbsp; <a
-							href="userdash/liked/${book.id }"> <i
-								class="fa fa-heart-o" style="color: black"></i>
+							href="userdash/liked/${book.id }"> <i class="fa fa-heart-o"
+								style="color: black"></i>
 						</a></td>
 					</tr>
 				</c:forEach>

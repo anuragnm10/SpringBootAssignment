@@ -48,7 +48,7 @@
 		</div>
 	</nav>
 	
-	<h1 style="text-align:center; color:#704a77;">Read Later Books</h1>
+	<h1 style="text-align:center; color:#704a77;">Liked Books</h1>
 	<div class="container">
 		<table class="table">
 			<thead>
