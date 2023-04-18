@@ -16,5 +16,8 @@ public interface BookRepo extends CrudRepository<Book, Integer>{
 	
 	@Query(value = "Select * from book where price<=?1", nativeQuery = true)
 	List<Book> findByPrice(double price);
+	
+	@Query(value = "Select * from book order by price", nativeQuery = true)
+	List<Book> findByPriceSorted();
 
 }

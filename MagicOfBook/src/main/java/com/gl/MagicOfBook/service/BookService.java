@@ -62,4 +62,9 @@ public class BookService {
 
 		return books;
 	}
+	
+	public List<Book> getBooksByPriceSorted(){
+		List<Book> books = bookRepo.findByPriceSorted();
+		return books;
+	}
 }

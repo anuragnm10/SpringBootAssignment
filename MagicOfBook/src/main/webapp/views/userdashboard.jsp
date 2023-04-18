@@ -68,7 +68,7 @@
 					<th scope="col">Genre</th>
 					<th scope="col">Author</th>
 					<th scope="col">Publication</th>
-					<th scope="col">Price</th>
+					<th scope="col">Price <a href="userdash/sort"><i class="fa fa-sort" aria-hidden="true"></i></a></th>
 					<th scope="col">READ LATER/ LIKE</th>
 				</tr>
 			</thead>
