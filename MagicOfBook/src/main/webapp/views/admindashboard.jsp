@@ -42,7 +42,7 @@
 		</div>
 	</nav>
 	<div>
-		<form method="get" action="/adminsearch">
+		<form style="margin-left: 16.5vh" method="get" action="/adminsearch">
 			<input style="margin-left: 5px; margin-top: 5px; border-radius: 9px" type="text"
 				name="query" placeholder="Search..."> <a
 				class="fa fa-search"

@@ -16,20 +16,6 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<Style>
-background-image
-:
- 
-url
-(
-"
-imagess
-/
-book
-.jpg
-"
-)
-</Style>
 <body style="height: 92vh; overflow: hidden;">
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -58,7 +44,7 @@ book
 	
 
 
-
+<img src="images/book.jpg" alt="My Image">
 
 </body>
 </html>

@@ -44,7 +44,7 @@
 		</div>
 	</nav>
 	<div>
-		<form method="get" action="/search">
+		<form style="margin-left: 16.5vh" method="get" action="/search">
 			<input style="margin-left: 5px; margin-top: 5px; border-radius: 9px" type="text"
 				name="query" placeholder="Search..."> <a
 				class="fa fa-search"
@@ -68,7 +68,7 @@
 					<th scope="col">Genre</th>
 					<th scope="col">Author</th>
 					<th scope="col">Publication</th>
-					<th scope="col">Price <a href="userdash/sort"><i class="fa fa-sort" aria-hidden="true"></i></a></th>
+					<th scope="col">Price <a href="/sort"><i class="fa fa-sort" aria-hidden="true"></i></a></th>
 					<th scope="col">READ LATER/ LIKE</th>
 				</tr>
 			</thead>

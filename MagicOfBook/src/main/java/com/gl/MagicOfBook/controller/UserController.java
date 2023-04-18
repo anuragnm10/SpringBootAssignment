@@ -86,7 +86,7 @@ public class UserController {
 	    return "userdashboard";
 	 }
 	
-	@GetMapping("userdash/sort")
+	@GetMapping("sort")
 	public String sort(Map<String, List<Book>> map) {
 		List<Book> books = bookservice.getBooksByPriceSorted();
 	    map.put("books", books);
