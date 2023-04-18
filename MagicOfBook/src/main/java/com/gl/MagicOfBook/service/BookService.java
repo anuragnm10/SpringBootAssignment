@@ -45,7 +45,9 @@ public class BookService {
 
 	public List<Book> getBook(String query, String category) {
 		List<Book> books = new ArrayList<>();
-		if (category.equals("author")) {
+		if(category.equals("all")) {
+			return getAllBooks();
+		}else if (category.equals("author")) {
 			books = bookRepo.findByAuthor(query);
 		} else if (category.equals("booktitle")) {
 			books = bookRepo.findByBookname(query);

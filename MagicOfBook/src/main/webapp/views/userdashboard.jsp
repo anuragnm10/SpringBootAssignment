@@ -50,6 +50,7 @@
 				class="fa fa-search"
 				style="color: black; margin-left: -25px; text-decoration: none"></a>&nbsp;<select style="margin-left: 5px"
 				name="category">
+				<option value="all">All</option>
 				<option value="author">Author</option>
 				<option value="booktitle">Book Title</option>
 				<option value="publication">Publication</option>
