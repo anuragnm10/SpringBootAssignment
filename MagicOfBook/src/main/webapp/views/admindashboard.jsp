@@ -41,6 +41,19 @@
 			</div>
 		</div>
 	</nav>
+	<div>
+		<form method="get" action="/adminsearch">
+			<input style="margin-left: 5px; margin-top: 5px; border-radius: 9px" type="text"
+				name="query" placeholder="Search..."> <a
+				class="fa fa-search"
+				style="color: black; margin-left: -25px; text-decoration: none"></a>&nbsp;<select style="margin-left: 5px"
+				name="category">
+				<option value="author">Author</option>
+				<option value="id">Id</option>
+			</select>
+			<button type="submit">Search</button>
+		</form>
+	</div>
 	<div class="container">
 		<table class="table">
 			<thead>
