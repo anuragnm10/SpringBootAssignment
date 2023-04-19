@@ -39,7 +39,7 @@
 			</div>
 		</div>
 	</nav>
-	<form action="userregister" method="post" style="height: 100vh;">
+	<form action="register" method="post" style="height: 100vh;">
 		<section class="h-100 h-custom" style="background-color: #8fc4b7;">
 			<div class="container py-5 h-100">
 				<div
@@ -69,7 +69,10 @@
 											class="form-control" name="password" /> <label
 											class="form-label" for="form3Example1q">Password</label>
 									</div>
-
+									<input type="radio" id="user" name="type" value="user" required>
+									<label for="user">User</label> <input
+										type="radio" id="admin" name="type" value="admin" required> <label
+										for="admin">Admin</label><br/><br/>
 									<button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
 
 								</form>

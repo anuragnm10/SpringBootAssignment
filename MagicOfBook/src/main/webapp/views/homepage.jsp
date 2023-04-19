@@ -34,9 +34,7 @@
 					<li class="nav-item"><a class="nav-link active" href="login">Login</a>
 					</li>
 					<li class="nav-item"><a class="nav-link active"
-						href="adminregister">AdminRegister</a></li>
-					<li class="nav-item"><a class="nav-link active"
-						href="userregister">UserRegister</a></li>
+						href="register">Register</a></li>
 				</ul>
 			</div>
 		</div>

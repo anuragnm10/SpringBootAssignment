@@ -52,7 +52,7 @@
 				<option value="author">Author</option>
 				<option value="id">Id</option>
 			</select>
-			<button type="submit">Search</button>
+			<button style="border-radius: 9px" type="submit">Search</button>
 		</form>
 	</div>
 	<div class="container">

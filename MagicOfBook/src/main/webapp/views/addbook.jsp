@@ -37,7 +37,7 @@
 			</div>
 		</div>
 	</nav>
-	<form action="add" method="post" style="height: 100vh;">
+	<form action="add" method="post" style="height: 120vh;">
 		<section class="h-100 h-custom" style="background-color: #8fc4b7;">
 			<div class="container py-5 h-100">
 				<div
